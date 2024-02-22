@@ -23,3 +23,15 @@ This ReactJS application provides a dynamic library directory platform, enabling
 1. Clone the repository:
    ```bash
    git clone https://github.com/Drumalee15/library-directory-app.git
+
+## Navigate to the project directory:
+   cd library-directory-app
+
+## Install the required packages:
+   npm install
+
+## Start the application:
+   npm start
+
+## Start expressjs server:
+   node ./server

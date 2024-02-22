@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  padding: 20px 0;
+}
+
+header h1,
+footer p {
+  font-weight: 700;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+header,
+footer {
+  padding: 20px 10%;
+}
+
+@media (max-width: 768px) {
+  header,
+  footer {
+    padding: 15px 5%;
+  }
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  padding: 50px 20px;
+  background-image: url("../resources/images/library-person-reading.jpg");
+  background-size: cover;
+  background-position: center center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+  position: relative;
+}
+
+a,
+.landing-page a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+a:hover,
+.landing-page a:hover {
+  color: white;
+}
+
+.landing-page {
+  position: relative;
+  text-align: center;
+  padding: 50px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.link {
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #007bff !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #0056b3 !important;
+}
+
+.copyright {
+  font-size: 0.8rem;
+}
+
+.welcome-header {
+  color: #666;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 400px !important;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.book {
+  margin-bottom: 20px;
+}
+
+.book h3 {
+  margin-bottom: 10px;
+}
+
+.footer {
+  min-height: 500px;
+}
+
+.search-page {
+  padding: 20px;
+}
+
+.search-input {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  width: 60%;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+}
+
+.book-image {
+  width: 150px;
+  height: 225px;
+}
+
+.book-synopsis {
+  font-size: 1.2rem;
+}
+
+.toggle-synopsis-btn {
+  display: block;
+  margin: 10px auto;
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+}
