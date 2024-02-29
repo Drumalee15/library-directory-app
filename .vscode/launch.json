@@ -1,0 +1,32 @@
+  {
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug Jest Tests",
+        "type": "node",
+        "request": "launch",
+        "runtimeArgs": [
+          "--inspect-brk",
+          "C:/workspaces/workspaces_frontend/library-directory-app/node_modules/jest/bin/jest.js",
+          // "--runInBand",
+          // "--testNamePattern=CardNumberInput valid entry - Visa"
+        ],
+        "cwd": "C:/workspaces/workspaces_frontend/library-directory-app",
+        "console": "integratedTerminal",
+        "internalConsoleOptions": "openOnSessionStart",
+      },
+      {
+        "name": "Debug Dev Server",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:8081/processCC",
+        "webRoot": "C:/workspaces/workspaces_frontend/library-directory-app"
+      },
+      {
+        "name": "Debug Tomcat Server",
+        "type": "chrome",
+        "request": "attach",
+        "port": 9229
+      }
+    ]
+  }
